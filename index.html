@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kahoot Bot</title>
+</head>
+<body>
+    <h1>Kahoot Bot</h1>
+    <label for="username">Nazwa użytkownika:</label>
+    <input type="text" id="username" name="username">
+    <button onclick="joinGame()">Dołącz do gry</button>
+    <br>
+    <button onclick="markCorrectAnswers()">Zaznacz poprawne odpowiedzi</button>
+
+    <script>
+        function joinGame() {
+            var username = document.getElementById("username").value;
+            // Tutaj możemy użyć JavaScriptu do komunikacji z botem, np. wysyłając nazwę użytkownika do serwera
+            // i wykonując odpowiednie akcje w skrypcie bota.
+            // Na potrzeby tego przykładu, wyświetlimy jedynie informację w konsoli.
+            console.log("Dołączanie do gry jako " + username + "...");
+        }
+
+        function markCorrectAnswers() {
+            // Tutaj możemy użyć JavaScriptu do zaznaczania poprawnych odpowiedzi na stronie.
+            // Na potrzeby tego przykładu, wyświetlimy jedynie informację w konsoli.
+            console.log("Zaznaczanie poprawnych odpowiedzi...");
+        }
+    </script>
+</body>
+</html>
